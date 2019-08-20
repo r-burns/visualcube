@@ -50,6 +50,10 @@
 
 */
 
+if (!empty($argv[1])) {
+  parse_str($argv[1], $_REQUEST);
+}
+
 	// Import configuration values
 	require 'visualcube_config.php';
 
